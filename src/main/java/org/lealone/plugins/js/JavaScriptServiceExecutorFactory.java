@@ -7,11 +7,10 @@ package org.lealone.plugins.js;
 
 import java.io.File;
 
-import org.lealone.db.PluginBase;
 import org.lealone.db.service.Service;
-import org.lealone.db.service.ServiceExecutorFactory;
+import org.lealone.db.service.ServiceExecutorFactoryBase;
 
-public class JavaScriptServiceExecutorFactory extends PluginBase implements ServiceExecutorFactory {
+public class JavaScriptServiceExecutorFactory extends ServiceExecutorFactoryBase {
 
     public JavaScriptServiceExecutorFactory() {
         super("js");
