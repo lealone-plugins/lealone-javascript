@@ -50,6 +50,7 @@ function hello(name) {
 }
 ```
 
+
 ## 创建服务
 
 执行以下 SQL 创建 js_hello_service
@@ -60,6 +61,14 @@ create service if not exists js_hello_service (
 )
 language 'js' implement by 'E:\lealone\lealone-plugins\javascript\src\test\resources\js\hello_service.js';
 ```
+
+也可以用以下简化版本，无需声明服务的方法，会自动调用 js 文件里定义的方法
+
+```sql
+create service if not exists js_hello_service
+language 'js' implement by 'E:\lealone\lealone-plugins\javascript\src\test\resources\js\hello_service.js';
+```
+
 
 ## 调用服务
 
