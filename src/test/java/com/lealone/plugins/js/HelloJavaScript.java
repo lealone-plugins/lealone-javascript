@@ -3,7 +3,7 @@
  * Licensed under the Server Side Public License, v 1.
  * Initial Developer: zhh
  */
-package org.lealone.plugins.js;
+package com.lealone.plugins.js;
 
 import org.graalvm.polyglot.Context;
 

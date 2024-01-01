@@ -1,13 +1,13 @@
-package org.lealone.plugins.js;
+package com.lealone.plugins.js;
 
-import org.lealone.plugins.orm.Model;
-import org.lealone.plugins.orm.ModelProperty;
-import org.lealone.plugins.orm.ModelTable;
-import org.lealone.plugins.orm.format.JsonFormat;
-import org.lealone.plugins.orm.property.PArray;
-import org.lealone.plugins.orm.property.PInteger;
-import org.lealone.plugins.orm.property.PLong;
-import org.lealone.plugins.orm.property.PString;
+import com.lealone.plugins.orm.Model;
+import com.lealone.plugins.orm.ModelProperty;
+import com.lealone.plugins.orm.ModelTable;
+import com.lealone.plugins.orm.format.JsonFormat;
+import com.lealone.plugins.orm.property.PArray;
+import com.lealone.plugins.orm.property.PInteger;
+import com.lealone.plugins.orm.property.PLong;
+import com.lealone.plugins.orm.property.PString;
 
 /**
  * Model for table 'USER'.

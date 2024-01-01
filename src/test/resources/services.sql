@@ -8,7 +8,7 @@ create table if not exists user (
   id long,
   phones ARRAY
 )
-package 'org.lealone.plugins.js' generate code './src/test/java';
+package 'com.lealone.plugins.js' generate code './src/test/java';
 
 
 create service if not exists hello_service (

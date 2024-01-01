@@ -26,7 +26,7 @@
 
 ```sql
 create plugin js
-  implement by 'org.lealone.plugins.js.JavaScriptServiceExecutorFactory' 
+  implement by 'com.lealone.plugins.js.JavaScriptServiceExecutorFactory' 
   class path 'E:\lealone\lealone-plugins\javascript\target\lealone-javascript-plugin-6.0.0.jar';
 ```
 
