@@ -13,9 +13,9 @@
 
 运行 `mvn clean package -Dmaven.test.skip=true`
 
-生成 jar 包 `target\lealone-javascript-plugin-6.0.0.jar`
+生成 jar 包 `target\lealone-javascript-plugin-6.0.1.jar`
 
-假设 jar 包的绝对路径是 `E:\lealone\lealone-plugins\javascript\target\lealone-javascript-plugin-6.0.0.jar`
+假设 jar 包的绝对路径是 `E:\lealone\lealone-plugins\javascript\target\lealone-javascript-plugin-6.0.1.jar`
 
 
 ## 创建插件
@@ -27,7 +27,7 @@
 ```sql
 create plugin js
   implement by 'com.lealone.plugins.js.JavaScriptServiceExecutorFactory' 
-  class path 'E:\lealone\lealone-plugins\javascript\target\lealone-javascript-plugin-6.0.0.jar';
+  class path 'E:\lealone\lealone-plugins\javascript\target\lealone-javascript-plugin-6.0.1.jar';
 ```
 
 要 drop 插件可以执行以下命令：
