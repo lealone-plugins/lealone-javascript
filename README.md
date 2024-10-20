@@ -13,9 +13,9 @@
 
 运行 `mvn clean package -Dmaven.test.skip=true`
 
-生成 jar 包 `target\lealone-javascript-plugin-6.0.1.jar`
+生成 jar 包 `target/lealone-javascript-plugin-6.0.1.jar`
 
-假设 jar 包的绝对路径是 `E:\lealone\lealone-plugins\javascript\target\lealone-javascript-plugin-6.0.1.jar`
+假设 jar 包的绝对路径是 `E:/lealone/lealone-plugins/javascript/target/lealone-javascript-plugin-6.0.1.jar`
 
 
 ## 创建插件
@@ -27,7 +27,7 @@
 ```sql
 create plugin js
   implement by 'com.lealone.plugins.js.JavaScriptServiceExecutorFactory' 
-  class path 'E:\lealone\lealone-plugins\javascript\target\lealone-javascript-plugin-6.0.1.jar';
+  class path 'E:/lealone/lealone-plugins/javascript/target/lealone-javascript-plugin-6.0.1.jar';
 ```
 
 要 drop 插件可以执行以下命令：
@@ -42,7 +42,7 @@ drop plugin js;
 
 ## 使用 JavaScript 开发微服务应用
 
-E:\lealone\lealone-plugins\javascript\src\test\resources\js\hello_service.js
+E:/lealone/lealone-plugins/javascript/src/test/resources/js/hello_service.js
 
 ```JavaScript
 function hello(name) {
@@ -59,14 +59,14 @@ function hello(name) {
 create service if not exists js_hello_service (
   hello(name varchar) varchar
 )
-language 'js' implement by 'E:\lealone\lealone-plugins\javascript\src\test\resources\js\hello_service.js';
+language 'js' implement by 'E:/lealone/lealone-plugins/javascript/src/test/resources/js/hello_service.js';
 ```
 
 也可以用以下简化版本，无需声明服务的方法，会自动调用 js 文件里定义的方法
 
 ```sql
 create service if not exists js_hello_service
-language 'js' implement by 'E:\lealone\lealone-plugins\javascript\src\test\resources\js\hello_service.js';
+language 'js' implement by 'E:/lealone/lealone-plugins/javascript/src/test/resources/js/hello_service.js';
 ```
 
 
